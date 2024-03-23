@@ -1,0 +1,30 @@
+Write a program to print the perimeter of a triangle having sides of a, b and c units by creating a class named 'Triangle' without any parameter in its constructor.
+Input Description:
+side1 side2 side3
+
+Output Description:
+perimeter
+
+Sample Input :
+3
+4
+5
+Sample Output :
+12
+
+#code
+#getting input from user
+a=int(input())
+b=int(input())
+c=int(input())
+#creating a class called triangle
+class Triangle:
+    def __init__(self,sidea,sideb,sidec):
+        self.sidea=sidea
+        self.sideb=sideb
+        self.sidec=sidec
+    def perimeter(self):
+        perimeter=self.sidea+self.sideb+self.sidec
+        print(perimeter)
+m=Triangle(a,b,c)
+m.perimeter()
