@@ -1,0 +1,29 @@
+'''
+Write a program to print the area of a triangle having base & height, by creating a class named 'Triangle' without any parameter in its constructor
+
+Input Description:
+Base Height
+
+Output Description:
+Area
+
+Sample Input :
+6
+6
+Sample Output :
+18
+'''
+a=int(input())
+b=int(input())
+class Triangle:
+    def __init__(self,sidea,sideb):
+        self.sidea=sidea
+        self.sideb=sideb
+    def perimeter(self):
+        perimeter=self.sidea+self.sideb
+        print(perimeter)
+    def area(self):
+        area=(self.sidea*self.sideb)/2
+        print(area)
+m=Triangle(a,b)
+m.area()
