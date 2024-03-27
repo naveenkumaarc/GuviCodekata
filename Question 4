@@ -1,0 +1,29 @@
+'''
+Write a program to print the area and circumfrence of a circle having radius r units by creating a class named 'circle' without any parameter in its constructor.
+
+Input Description:
+r
+
+Output Description:
+Area Circumference Note: Round the output to one decimal values
+
+Sample Input :
+3
+Sample Output :
+28.3
+18.8
+'''
+import math
+a=int(input())
+class circle:
+    def __init__(self,r):
+        self.r=r
+    def area(self):
+        area=math.pi*self.r*self.r
+        print(round(area,1))
+    def circum(self):
+        circum=2*math.pi*self.r
+        print(round(circum,1))
+m=circle(a)
+m.area()
+m.circum()
